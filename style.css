@@ -4,8 +4,15 @@
 }
 
 .menu-container{
+    display: grid;
+    grid-template-columns: 60px 1fr 60px; 
+    grid-template-rows: 1fr; 
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
     background-color: #fffcfc;
     color: black;
+    width: 100%;
+    max-width: 800px;
 }
 
 .nav-menu{
@@ -45,6 +52,7 @@
     left: 135em;
     box-sizing: border-box;
     margin-left: 12.5em;
+    width: 100%;
 }
 
 .li{
@@ -61,7 +69,7 @@
     padding-right: 0;
 }
 .img-logo{
-    width: 50%;
+    width: 100%;
     max-width: 400px;
     padding: 0;
     margin-right: 5px;
@@ -98,10 +106,11 @@
     width: 40%;
     height: 300px;
     object-fit: cover;
-    position: absolute;
+    position: relative;
     top: 1em;
     bottom: 0.5em;
     left: 34em;
+   
 }
 
 .carrusel li:first-child{
@@ -227,7 +236,7 @@
     border: 2px solid black;
     position: relative;
     width: 100%;
-    max-width: 1200px;
+    max-width: 2200px;
     padding: 50px 60px;
     margin: 3em;
     text-align: center justify;
@@ -266,7 +275,7 @@
 
 .gridimg{
     display: inline-flex;
-    justify-content: center;
-    align-items: inherit;
+    justify-content:space-between;
+    align-items:center;
     flex-wrap: wrap;
 }
