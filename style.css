@@ -81,7 +81,7 @@
 
 .main{
     border: 2px solid black;
-   margin-top: 0;
+    margin: 0;
 }
 
 .carrusel{
@@ -143,6 +143,7 @@
     font-size: 90px;
     border-radius: 100%;
 }
+
 
 .encabezadosh1{
     font-family: 'Montserrat', sans-serif;
@@ -278,4 +279,8 @@
     justify-content:space-between;
     align-items:center;
     flex-wrap: wrap;
+}
+
+.letter{
+    color: black;
 }

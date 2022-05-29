@@ -11,67 +11,65 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
   <title>Productos - P&L CANDLES</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
 </head>
 
 <body class="body">
   <!-- Inicio Header -->
   <header class="menu-container">
-
-
-    <nav>
-      <!-- Menu desplegable -->
-      <button class="nav-menu">
-        <i class="fa-solid fa-bars" width="100%"></i>
+      
+    <!-- Menú  desplegable -->
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle bg-transparent" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa-solid fa-bars letter"></i>
       </button>
-      <ul class="menu">
-        <li class="li">
-          <a href="productos.html" class="a">Productos</a>
-        </li>
-        <li class="li">
-          <a href="conocenos.html" class="a">Conocenos</a>
-        </li>
-        <li class="li">
-          <a href="contacto.html" class="a">Contacto</a>
-        </li>
-        <li class="li">
-          <a href="faq.html" class="a">FAQ</a>
-        </li>
-        <li class="li">
-          <a href="información importante.html" class="a">Información Importante</a>
-        </li>
+      <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownMenuButton2">
+        <li><a class="dropdown-item active" href="Productos.html">Productos</a></li>
+        <li><a class="dropdown-item" href="información importante.html">Información Importante</a></li>
+        <li><a class="dropdown-item" href="faq.html">Preguntas Frecuentes</a></li>
+        <li><a class="dropdown-item" href="conocenos.html">Quienes Somos</a></li>
+        <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
       </ul>
-    </nav>
-
-
-
-    <!-- Logo -->
-    <a href="index.html" class="logo"><img src="images/logo.png" alt="Logo P&L CANDLES" class="img-logo"></a>
-
-
-    <!-- Cada icono tendría un link que lo redirige a la parte correspondiente (Carrito, guardados, perfil, etc.) -->
-    <div class="boton">
-      <button>
-        <!-- buscador dentro de la página-->
-        <i class="fa-solid fa-magnifying-glass" width="100%"></i>
-      </button>
-
-      <button>
-        <i class="fa-solid fa-user" width="100%"><a href="Mi perfil"></a></i>
-      </button>
-
-      <button>
-        <i class="fa-solid fa-bookmark" width="100%"><a href="Mis guardados"></a></i>
-      </button>
-
-      <button>
-        <i class="fa-solid fa-bag-shopping" width="100%"><a href="Mi carrito"></a></i>
-      </button>
-
     </div>
+    
+
+      
+            <!-- Logo -->
+            <nav class="navbar bg-transparent">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                  <img src="images/logo.png" alt="logo" class="d-inline-block align-text-top logo logo-img">
+                </a>
+              </div>
+            </nav>
+           
+        
+
+<!-- Cada icono tendría un link que lo redirige a la parte correspondiente (Carrito, guardados, perfil, etc.) -->
+         <div class="boton">
+          <button> <!-- buscador dentro de la página--> 
+            <i class="fa-solid fa-magnifying-glass" width="100%"></i>
+          </button>
+
+          <button>
+            <i class="fa-solid fa-user" width="100%"><a href="Mi perfil"></a></i>           
+          </button>
+
+          <button>
+            <i class="fa-solid fa-bookmark" width="100%"><a href="Mis guardados"></a></i>
+          </button>  
+
+          <button>
+            <i class="fa-solid fa-bag-shopping" width="100%"><a href="Mi carrito"></a></i>
+           </button>
+               
+         </div>
 
 
   </header>
-  <!-- Fin del header -->
+<!-- Fin del header -->
 
   <main>
     <div>
@@ -99,204 +97,186 @@
       </ul>
 
       <section class="grid-container">
-
-        <div>
-          <div class="gridimg">
-            <img src="images/vela1.jpg" width="200px" height="200px" alt="Prueba">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/Coconut.jpeg" class="card-img-top" alt="Coconut">
+              <div class="card-body">
+                <h5 class="card-title">Coconut</h5>
+                <p class="card-text">$4.100</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <h3 class="h3">Coconut</h3>
-            <p>$4.100</p>
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/Vanilla.jpeg" class="card-img-top" alt="Vanilla">
+              <div class="card-body">
+                <h5 class="card-title">Vanilla</h5>
+                <p class="card-text">$4.500</p>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div>
-          <div class="gridimg">
-            <img src="images/vela1.jpg" width="200px" height="200px" alt="Prueba">
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/Citric.jpeg" class="card-img-top" alt="Citric">
+              <div class="card-body">
+                <h5 class="card-title">Citric</h5>
+                <p class="card-text">$3.800</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <h3>Vanilla</h3>
-            <p>$4.500</p>
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/Bubblegum" class="card-img-top" alt="Bubblegum">
+              <div class="card-body">
+                <h5 class="card-title">Bubblegum</h5>
+                <p class="card-text">$3.300</p>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div>
-          <div class="gridimg">
-            <img src="images/vela1.jpg" width="200px" height="200px" alt="Prueba">
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/LAVANDER.jpeg" class="card-img-top" alt="Lavander">
+              <div class="card-body">
+                <h5 class="card-title">Lavander</h5>
+                <p class="card-text">$3.300</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <h3>Citric</h3>
-            <p>$3.800</p>
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/Wonderlust" class="card-img-top" alt="Wonderlust">
+              <div class="card-body">
+                <h5 class="card-title">Wonderlust</h5>
+                <p class="card-text">$3.500</p>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div>
-          <div>
-            <img src="images/vela1.jpg" width="200px" height="200px" alt="Prueba">
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/Pomegrade.jpeg" class="card-img-top" alt="Pomegrade">
+              <div class="card-body">
+                <h5 class="card-title">Pomegrade</h5>
+                <p class="card-text">$2.000</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <h3>Bubblegum</h3>
-            <p>$3.300</p>
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/Coconut XL.jpeg" class="card-img-top" alt="Coconut-XL">
+              <div class="card-body">
+                <h5 class="card-title">Coconut XL</h5>
+                <p class="card-text">$8.100</p>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div>
-          <div>
-            <img src="images/vela1.jpg" width="200px" height="200px" alt="Prueba">
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/8e5bec0028cd45824aabf3893dc45353.jpeg" class="card-img-top" alt="Vanilla-XL">
+              <div class="card-body">
+                <h5 class="card-title">Vanilla XL</h5>
+                <p class="card-text">$8.200</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <h3>Pomegrade</h3>
-            <p>$3.300</p>
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/Citric XL.jpeg" class="card-img-top" alt="Citric-XL">
+              <div class="card-body">
+                <h5 class="card-title">Citric XL</h5>
+                <p class="card-text">$4.800</p>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div>
-          <div>
-            <img src="images/vela1.jpg" width="200px" height="200px" alt="Prueba">
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/37e249a9c1b4e291e6884bdd4c3ee442.jpeg" class="card-img-top" alt="Bubblegum-XL">
+              <div class="card-body">
+                <h5 class="card-title">Bubblegum XL</h5>
+                <p class="card-text">$4.300</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <h3>Wonderlust</h3>
-            <p>$3.500</p>
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/37e249a9c1b4e291e6884bdd4c3ee442.jpeg" class="card-img-top" alt="Lavander-XL">
+              <div class="card-body">
+                <h5 class="card-title">Lavander XL</h5>
+                <p class="card-text">$5.000</p>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div>
-          <div>
-            <img src="images/vela1.jpg" width="200px" height="200px" alt="Prueba">
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/wonderlust XL.jpeg" class="card-img-top" alt="Wonderlust-XL">
+              <div class="card-body">
+                <h5 class="card-title">Wonderlust XL</h5>
+                <p class="card-text">$4.500</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <h3>Cherry Blossom</h3>
-            <p>$4.000</p>
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/37e249a9c1b4e291e6884bdd4c3ee442.jpeg" class="card-img-top" alt="Pomegrade-XL">
+              <div class="card-body">
+                <h5 class="card-title">Pomegrade XL</h5>
+                <p class="card-text">$4.300</p>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div>
-          <div>
-            <img src="images/vela1.jpg" width="200px" height="200px" alt="Prueba">
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/37e249a9c1b4e291e6884bdd4c3ee442.jpeg" class="card-img-top" alt="Coconut-XXL">
+              <div class="card-body">
+                <h5 class="card-title">Cococnut XXL</h5>
+                <p class="card-text">$10.200</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <h3>Coconut XL</h3>
-            <p>$8.100</p>
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/37e249a9c1b4e291e6884bdd4c3ee442.jpeg" class="card-img-top" alt="Vanilla-XXL">
+              <div class="card-body">
+                <h5 class="card-title">Vanilla XXL</h5>
+                <p class="card-text">$10.500</p>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div>
-          <div>
-            <img src="images/vela1.jpg" width="200px" height="200px" alt="Prueba">
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/Citric XXL.jpeg" class="card-img-top" alt="Citric-XXL">
+              <div class="card-body">
+                <h5 class="card-title">Citric XXL</h5>
+                <p class="card-text">$8.200</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <h3>Vanilla XL</h3>
-            <p>$8.200</p>
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/37e249a9c1b4e291e6884bdd4c3ee442.jpeg" class="card-img-top" alt="Bubblegum-XXL">
+              <div class="card-body">
+                <h5 class="card-title">Bubblegum XXL</h5>
+                <p class="card-text">$8.500</p>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div>
-          <div>
-            <img src="images/vela1.jpg" width="200px" height="200px" alt="Prueba">
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/37e249a9c1b4e291e6884bdd4c3ee442.jpeg" class="card-img-top" alt="Lavander-XXL">
+              <div class="card-body">
+                <h5 class="card-title">Lavander XXL</h5>
+                <p class="card-text">$8.500</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <h3>Citric XL</h3>
-            <p>$4.800</p>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <img src="images/vela1.jpg" width="200px" height="200px" alt="Prueba">
-          </div>
-          <div>
-            <h3>Bubblegum XL</h3>
-            <p>$4.300</p>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <img src="images/vela1.jpg" width="200px" height="200px" alt="Prueba">
-          </div>
-          <div>
-            <h3>Pomegrade XL</h3>
-            <p>$4.300</p>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <img src="images/vela1.jpg" width="200px" height="200px" alt="Prueba">
-          </div>
-          <div>
-            <h3>Wonderlust XL</h3>
-            <p>$4.500</p>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <img src="images/vela1.jpg" width="200px" height="200px" alt="Prueba">
-          </div>
-          <div>
-            <h3>Cherry Blossom XL</h3>
-            <p>$5.000</p>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <img src="images/vela1.jpg" width="200px" height="200px" alt="Prueba">
-          </div>
-          <div>
-            <h3>Coconut XXL</h3>
-            <p>$10.200</p>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <img src="images/vela1.jpg" width="200px" height="200px" alt="Prueba">
-          </div>
-          <div>
-            <h3>Vanilla XXL</h3>
-            <p>$10.500</p>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <img src="images/vela1.jpg" width="200px" height="200px" alt="Prueba">
-          </div>
-          <div>
-            <h3>Citric XXL</h3>
-            <p>$8.200</p>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <img src="images/vela1.jpg" width="200px" height="200px" alt="Prueba">
-          </div>
-          <div>
-            <h3>Bubblegum XXL</h3>
-            <p>$8.500</p>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <img src="images/vela1.jpg" width="200px" height="200px" alt="Prueba">
-          </div>
-          <div>
-            <h3>Pomegrade XXL</h3>
-            <p>$8.500</p>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <img src="images/vela1.jpg" width="200px" height="200px" alt="Prueba">
-          </div>
-          <div>
-            <h3>Wonderlust XXL</h3>
-            <p>$9.000</p>
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/37e249a9c1b4e291e6884bdd4c3ee442.jpeg" class="card-img-top" alt="Wonderlust-XXL">
+              <div class="card-body">
+                <h5 class="card-title">Wonderlust XXL</h5>
+                <p class="card-text">$9.000</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -393,7 +373,7 @@
 
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

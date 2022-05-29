@@ -1,228 +1,225 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/3f7c4c0b33.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-    <title>P&L CANDLES</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+  <title>P&L CANDLES</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
 </head>
 
 <body class="body">
-    <!-- Inicio Header -->
-   <header class="menu-container">
-      
+  <!-- Inicio Header -->
+  <header class="menu-container">
 
-          <nav >
-            <!-- Menu desplegable -->
-             <button class="nav-menu">
-               <i class="fa-solid fa-bars" width="100%"></i>
-              </button>
-              <ul class="menu">
-                   <li class="li">
-                     <a href="productos.html" class="a">Productos</a>
-                    </li>
-                   <li class="li">
-                     <a href="conocenos.html" class="a">Conocenos</a>
-                    </li>
-                   <li class="li">
-                     <a href="contacto.html" class="a">Contacto</a>
-                    </li>
-                   <li class="li">
-                     <a href="faq.html" class="a">FAQ</a>
-                    </li>
-                   <li class="li">
-                     <a href="información importante.html" class="a">Información Importante</a>
-                    </li>
-              </ul> 
-          </nav>
+    <!-- Menú  desplegable -->
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle bg-transparent" type="button" id="dropdownMenuButton2"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="fa-solid fa-bars letter"></i>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownMenuButton2">
+        <li><a class="dropdown-item active" href="Productos.html">Productos</a></li>
+        <li><a class="dropdown-item" href="información importante.html">Información Importante</a></li>
+        <li><a class="dropdown-item" href="faq.html">Preguntas Frecuentes</a></li>
+        <li><a class="dropdown-item" href="conocenos.html">Quienes Somos</a></li>
+        <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
 
 
-      
-            <!-- Logo -->
-           <a href="index.html" class="logo"><img src="images/logo.png" alt="Logo P&L CANDLES"></a>
-        
 
-<!-- Cada icono tendría un link que lo redirige a la parte correspondiente (Carrito, guardados, perfil, etc.) -->
-         <div class="boton">
-          <button> <!-- buscador dentro de la página--> 
-            <i class="fa-solid fa-magnifying-glass" width="100%"></i>
-          </button>
+    <!-- Logo -->
+    <nav class="navbar bg-transparent">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="logo" class="d-inline-block align-text-top logo logo-img">
+        </a>
+      </div>
+    </nav>
 
-          <button>
-            <i class="fa-solid fa-user" width="100%"><a href="Mi perfil"></a></i>           
-          </button>
 
-          <button>
-            <i class="fa-solid fa-bookmark" width="100%"><a href="Mis guardados"></a></i>
-          </button>  
 
-          <button>
-            <i class="fa-solid fa-bag-shopping" width="100%"><a href="Mi carrito"></a></i>
-           </button>
-               
-         </div>
+    <!-- Cada icono tendría un link que lo redirige a la parte correspondiente (Carrito, guardados, perfil, etc.) -->
+    <div class="boton">
+      <button>
+        <!-- buscador dentro de la página-->
+        <i class="fa-solid fa-magnifying-glass" width="100%"></i>
+      </button>
+
+      <button>
+        <i class="fa-solid fa-user" width="100%"><a href="Mi perfil"></a></i>
+      </button>
+
+      <button>
+        <i class="fa-solid fa-bookmark" width="100%"><a href="Mis guardados"></a></i>
+      </button>
+
+      <button>
+        <i class="fa-solid fa-bag-shopping" width="100%"><a href="Mi carrito"></a></i>
+      </button>
+
+    </div>
 
 
   </header>
-<!-- Fin del header -->
+  <!-- Fin del header -->
 
-<br>
-<br>
-<br>
-
-
-<main class="main">
-     <!-- Carrusel de fotos(Las fotos utilizadas son pura y exclusivamente de prueba) --> 
-  <ul class="carrusel">
-    <li id="slide1">
-      <img src="images/vela4.jpg" height="50px" width="100px" alt="Velas de cera de soja">
-    </li>
-
-    <li id="slide2">
-      <img src="images/vela5.jpg" height="400" width="300" alt="Vela en frasco">
-    </li>
-
-    <li id="slide3">
-      <img src="images/vela1.jpg" height="400" width="300" alt="Vela de soja">
-    </li>
-
-  </ul>
-    
-  <ul class="puntos">
-    <li>
-      <a href="#slide1">.</a>
-    </li>
-
-    <li>
-      <a href="#slide2">.</a>
-    </li>
-
-    <li>
-      <a href="#slide3">.</a>
-    </li>
-
-  </ul>
-    
-   
-   
-   
-
-<!-- Puntitos abajo de las fotos para pasarlas -->
-
-</main>
-
-<br>
-<br>
-<br>
-
-<div class="encabezados">
-
-  <h1 class="encabezadosh1">
-    Nuestros Favoritos
-  </h1>
-<br>
-<br>
-<br>
-
-<nav>
-
- <a href="Productos.html"><img src="images/vela1.jpg" alt="Velas de cera de soja" id="vela1"></a>
- <a href="Productos.html"><img src="images/vela2.jpg"  alt="Vela en frasco" id="vela2"></a>
- <a href="Productos.html"><img src="images/vela3.jpg"  alt="Vela de soja" id="vela3"></a>
+  <br>
+  <br>
+  <br>
 
 
-</nav>
-
-</div>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<!-- Inicio del footer -->
-<footer class="footer">
-     <div class="grupo1">
-
-       <div class="box">
-         <h2>Información Útil</h2> 
-         <nav>
-           <ul class="footer-ul">
-             <li><a href="faq.html" class="a">FAQ</a></li>
-             <br>
-             <li><a href="contacto.html" class="a">Contacto</a></li>
-             <br>
-             <li><a href="información importante.html" class="a">Información importante</a></li>
-           </ul>
-  
-          </nav>
-       </div>
-
-       <div class="box"> 
-         <h2>Quienes Somos</h2>
-        <nav>
-           <ul class="footer-ul">
-              <li><a href="conocenos.html" class="a">Conocenos</a></li>
-           </ul>
-        </nav>
-
-       </div>
-
-       <div class="box">
-         <h2>Social</h2>
-
-       <nav>
-         <ul class="footer-ul">
-           
-            <li>
-
-             <a href="https://www.instagram.com" class="a"><img src="images/Logo_insta-removebg-preview.png" height="44" width="41" alt="Instagram"></a>
-
-            </li>
-
-
-            <li>
-
-             <a href="https://www.facebook.com" class="a"><img src="images/facebook-removebg-preview.png" height="34" width="40" alt="Facebook"></a>
-          
-            </li>
-
-           
-            <li>
-
-              <a href="https://ar.pinterest.com" class="a"><img src="images/pinterest_redondo-removebg-preview.png" height="34" width="40" alt="Pinterest"></a>
-
-            </li>
-         
-          </ul>
-
-       </nav>
-
-
-       </div>
-    
+  <main class="main d-flex justify-content-center">
+    <!-- Carrusel de fotos(Las fotos utilizadas son pura y exclusivamente de prueba) -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/foto para carrusel 1.jpeg" class="d-block w-100" alt="vela">
+        </div>
+        <div class="carousel-item">
+          <img src="images/foto para carrusel 2.jpeg" class="d-block w-100" alt="vela de soja">
+        </div>
+        <div class="carousel-item">
+          <img src="images/foto para carrusel 3.jpg" class="d-block w-100" alt="vela soja">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </button>
     </div>
 
-<div class="grupo2">
-  <small>&copy; 2022 <b>P&L</b> - Todos los Derechos Reservados</small>
-</div>
-       
-      
-         
+  </main>
 
-</footer>
+  <br>
+  <br>
+  <br>
 
-<!-- Fin del footer -->
 
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col col-lg-2">
+        <h1 class="d-flex justify-content-center text-decoration-underline">Nuestros Favoritos</h1>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col">
+        <a href="Productos.html"><img src="images/023794c444acd15a4eb17b26df3ea4ee.jpeg" alt="v"></a>
+      </div>
+      <div class="col">
+        <a href="Productos.html"><img src="images/37e249a9c1b4e291e6884bdd4c3ee442.jpeg" alt="ve"></a>
+      </div>
+      <div class="col col-lg-2">
+        <a href="Productos.html"><img src="images/364edc12b9e14b6c768c32099b5e906a.jpeg" alt="vel"></a>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!-- Inicio del footer -->
+  <footer class="footer">
+    <div class="grupo1">
+
+      <div class="box">
+        <h2>Información Útil</h2>
+        <nav>
+          <ul class="footer-ul">
+            <li><a href="faq.html" class="a">FAQ</a></li>
+            <br>
+            <li><a href="contacto.html" class="a">Contacto</a></li>
+            <br>
+            <li><a href="información importante.html" class="a">Información importante</a></li>
+          </ul>
+
+        </nav>
+      </div>
+
+      <div class="box">
+        <h2>Quienes Somos</h2>
+        <nav>
+          <ul class="footer-ul">
+            <li><a href="conocenos.html" class="a">Conocenos</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="box">
+        <h2>Social</h2>
+
+        <nav>
+          <ul class="footer-ul">
+
+            <li>
+
+              <a href="https://www.instagram.com" class="a"><img src="images/Logo_insta-removebg-preview.png"
+                  height="44" width="41" alt="Instagram"></a>
+
+            </li>
+
+
+            <li>
+
+              <a href="https://www.facebook.com" class="a"><img src="images/facebook-removebg-preview.png" height="34"
+                  width="40" alt="Facebook"></a>
+
+            </li>
+
+
+            <li>
+
+              <a href="https://ar.pinterest.com" class="a"><img src="images/pinterest_redondo-removebg-preview.png"
+                  height="34" width="40" alt="Pinterest"></a>
+
+            </li>
+
+          </ul>
+
+        </nav>
+
+
+      </div>
+
+    </div>
+
+    <div class="grupo2">
+      <small>&copy; 2022 <b>P&L</b> - Todos los Derechos Reservados</small>
+    </div>
+
+
+
+
+  </footer>
+
+  <!-- Fin del footer -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/3f7c4c0b33.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
