@@ -106,11 +106,10 @@
 .encabezadosh1{
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
-    display: inline;
+    display: inline-flex;
     padding: auto;
     margin: auto;
-    position: absolute;
-    left: 10em;
+    justify-content: center;
     border-bottom: 4px solid black;
 }
 
@@ -197,7 +196,6 @@
     width: 100%;
     max-width: 2200px;
     padding: 50px 60px;
-    margin: 3em;
     text-align: center justify;
 }
  
